@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "873306632520",
+    "firebase_url": "https://crespimobilehybrid.firebaseio.com",
+    "project_id": "crespimobilehybrid",
+    "storage_bucket": "crespimobilehybrid.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:873306632520:android:a57c90f078bb13f8b7037d",
+        "android_client_info": {
+          "package_name": "io.ionic.starter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "873306632520-qtt7b379is833h8u24hi6hn68197drmr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaElg_nArftMGA2Vr2Qq0hlRh6LWG2NX8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "873306632520-qtt7b379is833h8u24hi6hn68197drmr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "873306632520-s6khg90hl0k50hvm7g0ebjlkvsrsikb9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "io.ionic.starter"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "PhotoLocation",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "mobilehybridapi",
+  "version": "1.0.0",
+  "description": "API for Mobile Hybrid project",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "keywords": [
+    "API",
+    "Mobile",
+    "Auth"
+  ],
+  "author": "crespi_c",
+  "license": "ISC",
+  "dependencies": {
+    "aes256": "^1.0.4",
+    "boom": "^7.3.0",
+    "fcm-node": "^1.5.2",
+    "firebase-admin": "^8.8.0",
+    "hapi": "^18.1.0",
+    "joi": "^14.3.1",
+    "lodash": "^4.17.15",
+    "massive": "^6.1.1"
+  }
+}

@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      User connection
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-title class="login-title">Login</ion-title>
+    <form [formGroup]="loginForm">
+      <ion-card>
+        <ion-input class="login-input" [formControl]="loginUsernameInput" placeholder="Username"></ion-input>
+      </ion-card>
+      <ion-card>
+        <ion-input class="login-input" [formControl]="loginPasswordInput" placeholder="Password" type="password"></ion-input>
+      </ion-card>
+      <ion-button class="login-button" (click)="login()" [disabled]="!this.loginPasswordInput.valid || !this.loginUsernameInput.valid">Login</ion-button>
+    </form>
+  </ion-card>
+  <ion-card>
+    <ion-title class="login-title">No account ? Register</ion-title>
+    <form [formGroup]="registerForm">
+      <ion-card>
+        <ion-input class="register-input" [formControl]="registerUsernameInput" placeholder="Username" type="text"></ion-input>
+      </ion-card>
+      <ion-card>
+        <ion-input class="register-input" [formControl]="registerPasswordInput" placeholder="Password" type="password"></ion-input>
+      </ion-card>
+      <ion-card>
+        <ion-input class="register-input" [formControl]="registerValidatePwdInput" placeholder="Validate Password" type="password"></ion-input>
+      </ion-card>
+      <div>
+        <ion-label color="danger" [hidden]="!this.registerPasswordInput.valid || !this.registerValidatePwdInput.valid || this.registerPasswordInput.value === this.registerValidatePwdInput.value">Passwords don't match</ion-label>
+      </div>
+      <ion-button class="login-button" (click)="register()" [disabled]="!this.registerUsernameInput.valid || !this.registerPasswordInput.valid || !this.registerValidatePwdInput.valid || this.registerPasswordInput.value != this.registerValidatePwdInput.value">Register</ion-button>
+    </form>
+  </ion-card>
+</ion-content>
